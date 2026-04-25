@@ -1,11 +1,6 @@
 "use client";
 
-import {
-  collection,
-  onSnapshot,
-  orderBy,
-  query
-} from "firebase/firestore";
+import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
 import { db, isFirebaseConfigured } from "@/lib/firebase";
 import type { MenuCategory } from "@/types/menu";
 

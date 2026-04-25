@@ -13,7 +13,9 @@ export default function MenuItemCard({ item }: MenuItemCardProps) {
           ₺{item.price}
         </p>
       </div>
-      {item.description && <p className="mt-2 text-sm leading-relaxed text-stone-600">{item.description}</p>}
+      {item.description && (
+        <p className="mt-2 text-sm leading-relaxed text-stone-600">{item.description}</p>
+      )}
     </article>
   );
 }

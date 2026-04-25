@@ -13,7 +13,10 @@ const firebaseConfig = {
 };
 
 const hasRequiredFirebaseConfig = Boolean(
-  firebaseConfig.apiKey && firebaseConfig.authDomain && firebaseConfig.projectId && firebaseConfig.appId
+  firebaseConfig.apiKey &&
+  firebaseConfig.authDomain &&
+  firebaseConfig.projectId &&
+  firebaseConfig.appId
 );
 
 let app: FirebaseApp | null = null;

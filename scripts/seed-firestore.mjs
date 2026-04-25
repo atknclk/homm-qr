@@ -40,59 +40,157 @@ for (const key of requiredKeys) {
 
 const seedData = [
   {
-    id: "hot-coffees",
-    title: "HOT COFFEE'S",
+    id: "sicak-kahveler",
+    title: "SICAK KAHVELER",
     order: 0,
     items: [
-      { name: "Espresso", description: "Intense single-shot espresso with rich crema.", price: 150, order: 0 },
-      { name: "Cappuccino", description: "Espresso with steamed milk and airy foam.", price: 220, order: 1 },
+      { name: "Espresso", description: "Yoğun tek shot espresso.", price: 150, order: 0 },
+      { name: "Double Espresso", description: "Çift shot espresso.", price: 180, order: 1 },
+      { name: "Filtre Kahve", description: "Günlük demleme filtre kahve.", price: 180, order: 2 },
       {
-        name: "Flat White",
-        description: "Double espresso balanced with silky microfoam milk.",
-        price: 230,
-        order: 2
+        name: "Americano",
+        description: "Espresso bazlı, daha yumuşak içim.",
+        price: 200,
+        order: 3
       },
-      { name: "Mocha", description: "Espresso, chocolate, and steamed milk.", price: 240, order: 3 },
+      { name: "Latte", description: "Espresso ve kadifemsi süt.", price: 210, order: 4 },
+      { name: "Aromalı Latte", description: "Aromalı şurup ile latte.", price: 230, order: 5 },
+      { name: "Cappuccino", description: "Espresso, süt ve yoğun köpük.", price: 220, order: 6 },
+      { name: "Cortado", description: "Dengeli espresso ve az süt.", price: 200, order: 7 },
+      { name: "Flat White", description: "Çift espresso, mikro köpük süt.", price: 220, order: 8 },
+      { name: "Mocha", description: "Çikolata dokunuşlu latte.", price: 230, order: 9 },
       {
-        name: "Turkish Coffee",
-        description: "Traditional finely ground coffee served in a small cup.",
-        price: 120,
-        order: 4
+        name: "White Chocolate Mocha",
+        description: "Beyaz çikolata notalı mocha.",
+        price: 230,
+        order: 10
+      },
+      { name: "Türk Kahvesi", description: "Geleneksel Türk kahvesi.", price: 120, order: 11 },
+      {
+        name: "Double Türk Kahvesi",
+        description: "Daha yoğun Türk kahvesi.",
+        price: 150,
+        order: 12
       }
     ]
   },
   {
-    id: "cold-coffees",
-    title: "COLD COFFEE'S",
+    id: "soguk-kahveler",
+    title: "SOĞUK KAHVELER",
     order: 1,
     items: [
-      { name: "Ice Americano", description: "Espresso poured over cold water and ice.", price: 210, order: 0 },
-      { name: "Ice Latte", description: "Smooth espresso with chilled milk and ice.", price: 220, order: 1 },
-      { name: "Ice Mocha", description: "Iced espresso drink with chocolate and milk.", price: 240, order: 2 },
-      { name: "Cold Brew", description: "Slow-steeped coffee, naturally sweet and refreshing.", price: 240, order: 3 },
+      { name: "Ice Americano", description: "Buz ve su ile ferah espresso.", price: 210, order: 0 },
+      { name: "Ice Latte", description: "Buzlu latte.", price: 220, order: 1 },
+      { name: "Aromalı Ice Latte", description: "Aromalı buzlu latte.", price: 240, order: 2 },
+      {
+        name: "Ice Flat White",
+        description: "Yoğun espresso tadında buzlu flat white.",
+        price: 230,
+        order: 3
+      },
+      { name: "Ice Mocha", description: "Buzlu çikolatalı kahve.", price: 240, order: 4 },
       {
         name: "Ice White Mocha",
-        description: "White chocolate espresso blend served over ice.",
-        price: 245,
-        order: 4
-      }
+        description: "Buzlu beyaz çikolatalı mocha.",
+        price: 240,
+        order: 5
+      },
+      { name: "Cold Brew", description: "Uzun demleme, yumuşak içim.", price: 240, order: 6 }
     ]
   },
   {
-    id: "snacks",
-    title: "SNACKS",
+    id: "kahvalti-ve-tabaklar",
+    title: "KAHVALTI VE TABAKLAR",
     order: 2,
     items: [
       {
-        name: "Berry Granola Bowl",
-        description: "Seasonal berries, labneh cream, and house granola.",
+        name: "Berry Granola",
+        description: "Kırmızı meyveler, süzme yoğurt-labne kreması ve ev yapımı granola.",
         price: 380,
         order: 0
       },
-      { name: "Avocado Toast", description: "Sourdough toast with avocado cream and poached egg.", price: 420, order: 1 },
-      { name: "French Toast", description: "Egg-soaked brioche with agave syrup and fresh fruits.", price: 390, order: 2 },
-      { name: "Smoked Salmon Roll", description: "Sourdough roll with smoked salmon and salad greens.", price: 470, order: 3 },
-      { name: "Pretzel Plate", description: "Pretzel, tulum cheese, olives, and boiled egg.", price: 390, order: 4 }
+      {
+        name: "Poşe Armut Granola",
+        description: "Tarçınlı elma püresi, poşe armut, süzme yoğurt-labne kreması ve granola.",
+        price: 370,
+        order: 1
+      },
+      {
+        name: "Somon Avokado",
+        description: "Ekşi maya ekmek üzerinde avokado kreması, somon füme ve poşe yumurta.",
+        price: 470,
+        order: 2
+      },
+      {
+        name: "Füme Kaburga İstiridye Mantar",
+        description: "Otlu labne kreması, füme antrikot ve ızgara istiridye mantarı.",
+        price: 450,
+        order: 3
+      },
+      {
+        name: "Ege Benedict",
+        description: "Dana jambon, ricotta kreması, poşe yumurta ve hollandaise sos.",
+        price: 420,
+        order: 4
+      },
+      {
+        name: "French Tost",
+        description: "Agave şuruplu ve yumurtalı ekmek üzerinde taze meyveler.",
+        price: 390,
+        order: 5
+      },
+      {
+        name: "Bretzel Tabağı",
+        description: "Bretzel, salata, tulum peyniri, sele zeytin ve haşlanmış yumurta.",
+        price: 390,
+        order: 6
+      }
+    ]
+  },
+  {
+    id: "matcha",
+    title: "MATCHA",
+    order: 3,
+    items: [
+      { name: "Matcha Latte", description: "Klasik matcha latte.", price: 240, order: 0 },
+      { name: "Strawberry Matcha", description: "Çilek bazlı matcha latte.", price: 260, order: 1 },
+      { name: "Matcha Çayı", description: "Saf matcha çayı.", price: 200, order: 2 }
+    ]
+  },
+  {
+    id: "cay-ve-diger-icecekler",
+    title: "ÇAY VE DİĞER İÇECEKLER",
+    order: 4,
+    items: [
+      { name: "Çay", description: "Klasik ince belli çay.", price: 50, order: 0 },
+      { name: "Fincan Çay", description: "Porselen fincanda çay servisi.", price: 85, order: 1 },
+      { name: "Ihlamur", description: "Bitki çayı.", price: 180, order: 2 },
+      {
+        name: "Yaseminli Yeşil Çay",
+        description: "Hafif aromalı yeşil çay.",
+        price: 190,
+        order: 3
+      },
+      { name: "Rooibos Relax", description: "Kafeinsiz bitki çayı.", price: 200, order: 4 },
+      { name: "Sıcak Çikolata", description: "Yoğun sıcak çikolata.", price: 230, order: 5 },
+      { name: "Sahlep", description: "Tarçınla servis edilen sıcak sahlep.", price: 210, order: 6 },
+      { name: "Chai Tea Latte", description: "Baharatlı chai latte.", price: 220, order: 7 },
+      { name: "Su", description: "330 ml su.", price: 50, order: 8 },
+      { name: "Soda", description: "Maden suyu.", price: 90, order: 9 },
+      { name: "Churchill", description: "Limonlu-tuzlu soda karışımı.", price: 130, order: 10 }
+    ]
+  },
+  {
+    id: "ekstralar",
+    title: "EKSTRALAR",
+    order: 5,
+    items: [
+      {
+        name: "Bitkisel Süt",
+        description: "Badem / yulaf / soya alternatif süt farkı.",
+        price: 40,
+        order: 0
+      }
     ]
   }
 ];

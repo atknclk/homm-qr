@@ -54,9 +54,7 @@ Document example:
 {
   "title": "HOT COFFEE'S",
   "order": 0,
-  "items": [
-    { "name": "Espresso", "description": "Single shot", "price": 150, "order": 0 }
-  ]
+  "items": [{ "name": "Espresso", "description": "Single shot", "price": 150, "order": 0 }]
 }
 ```
 
