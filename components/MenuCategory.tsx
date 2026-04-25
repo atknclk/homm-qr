@@ -9,11 +9,11 @@ export default function MenuCategory({ category }: MenuCategoryProps) {
   const sectionId = category.title.toLowerCase().replace(/'/g, "").replace(/\s+/g, "-");
 
   return (
-    <section id={sectionId} className="scroll-mt-22">
+    <section id={sectionId} className="scroll-mt-21">
       <h2 className="mb-4 text-lg font-semibold tracking-tight text-stone-900">{category.title}</h2>
       <div className="grid gap-3">
-        {category.items.map((item) => (
-          <MenuItemCard key={item.name} item={item} />
+        {category.items.map((item, index) => (
+          <MenuItemCard key={item.id ?? `${item.name}-${index}`} item={item} />
         ))}
       </div>
     </section>
