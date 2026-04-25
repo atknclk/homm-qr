@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f6f3ec;
+  background-image:
+    radial-gradient(120px 90px at 12% 8%, transparent 96%, rgba(228, 182, 186, 0.45) 97%, transparent 100%),
+    radial-gradient(160px 120px at 72% 12%, transparent 96%, rgba(228, 182, 186, 0.42) 97%, transparent 100%),
+    radial-gradient(170px 130px at 20% 48%, transparent 96%, rgba(228, 182, 186, 0.4) 97%, transparent 100%),
+    radial-gradient(120px 100px at 82% 46%, transparent 96%, rgba(228, 182, 186, 0.38) 97%, transparent 100%),
+    radial-gradient(180px 120px at 42% 86%, transparent 96%, rgba(228, 182, 186, 0.4) 97%, transparent 100%),
+    linear-gradient(180deg, #faf8f4 0%, #f3eee6 100%);
+  background-size: 340px 340px, 420px 380px, 380px 360px, 360px 340px, 440px 380px, 100% 100%;
+  background-position: 0 0, 100px 20px, 10px 180px, 180px 160px, 80px 300px, 0 0;
+  color: #171717;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
